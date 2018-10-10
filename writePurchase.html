@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+	<!--
+	作者：1758522370@qq.com
+	时间：2018-10-06
+	描述：只作为一个框架的模板，并不在真正的页面中显示
+-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>发布收购药材信息</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="css/bbs.css" />
+		<script src="jquery-3.3.1.js"></script>
+		<!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<script src="js/bbs.js"></script>
+	</head>
+
+	<body>
+		<div id="top-container">
+			<!--
+            	作者：1758522370@qq.com
+            	时间：2018-10-06
+            	描述：标头
+            -->
+			<p>智药</p>
+		</div>
+		<div id="body-container" class="container" style="margin-left: 0; padding-left: 0;">
+			<!--
+            	container 类不可嵌套使用
+            -->
+			<div id="left-container" style="height: 1000px">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="word">
+						<a href="incubator.html"><span class="glyphicon glyphicon-th-large"></span>培养箱</a>
+					</li>
+					<li class="word active">
+						<a href="#"><span class="glyphicon glyphicon-comment"></span>论坛&nbsp;&nbsp;</a>
+					</li>
+					<li class="word">
+						<a href="my.html"><span class="glyphicon glyphicon-user"></span>我的&nbsp;&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+			<div id="right-container">
+				<div style="margin-left:140px;margin-top: 40px;" class="row">
+					<blockquote>
+						<h4>编辑药材收购信息</h4>
+					</blockquote>
+					<div class="col-md-8">
+						<form role="form">
+							<div class="form-group">
+								<label for="pMedicine">药材名称</label>
+								<input class="form-control" type="text" id="pMedicine" placeholder="想要收购什么药材写在这里吧" />
+							</div>
+							<div class="form-group">
+								<label for="pPrice" >定价(RMB/KG)</label>
+								<input class="form-control" type="text" id="pPrice" placeholder="期望以此价格收购" />
+							</div>
+							<div class="form-group">
+								<label for="pDescribe">描述</label>
+								<textarea  class="form-control" rows="3" id="pDescribe" placeholder="对所收购药材的要求"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="pPhone">联系方式</label>
+								<input type="text" class="form-control" id="pPhone" placeholder="如何通过电话联系到您呢" onblur="checkPPhone()"/>
+								<p id="telephoneError" class="errorMessage"></p>
+							</div>
+							<div class="form-group">
+								<a href="bbs.html"><button type="button" class="btn btn-default" class="BBSbutton" style="float: right;margin: 10px;">取消</button></a>
+								<button type="submit" class="btn btn-primary" class="BBSbutton" style="float: right;margin: 10px;">发表</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="bottom-container">
+			<!--
+            	作者：1758522370@qq.com
+            	时间：2018-10-06
+            	描述：可为底部固定信息
+            -->
+		</div>
+
+	</body>
+
+</html>

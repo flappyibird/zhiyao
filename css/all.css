@@ -1,0 +1,27 @@
+#top-container {
+	height: 50px;
+	border-bottom: solid darkgray 0.1px;
+	width: 100%;
+}
+
+#body-container {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#left-container {
+	width: auto;
+	float: left;
+	border-right: solid darkgray 0.1px;
+	padding: 0.1px;
+}
+
+#right-container {}
+
+.word {
+	text-align: center;
+}
+
+span{
+	margin-right: 5px;
+}

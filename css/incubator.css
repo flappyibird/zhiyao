@@ -1,0 +1,14 @@
+.incubator-text {
+	text-align: center;
+}
+
+.incubator-container {
+	margin-top: 10px;
+}
+
+.incubator-block{
+	/*width: 20%;*/
+	float: left;
+	height: auto;
+	margin: 10px;
+}
