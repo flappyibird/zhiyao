@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="css/bbs.css" />
+		<script src="jquery-3.3.1.js"></script>
+		<!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		
+	</head>
+
+	<body>
+		<div id="top-container">
+			<!--
+            	作者：1758522370@qq.com
+            	时间：2018-10-06
+            	描述：标头
+            -->
+			<p>智药</p>
+		</div>
+		<div id="body-container" class="container" style="margin-left: 0; padding-left: 0;">
+			<!--
+            	container 类不可嵌套使用
+            -->
+			<div id="left-container" style="height: 1000px">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="word">
+						<a href="incubator.html"><span class="glyphicon glyphicon-th-large"></span>培养箱</a>
+					</li>
+					<li class="active word">
+						<a href="#"><span class="glyphicon glyphicon-comment"></span>论坛&nbsp;&nbsp;</a>
+					</li>
+					<li class="word">
+						<a href="my.html"><span class="glyphicon glyphicon-user"></span>我的&nbsp;&nbsp;</a>
+					</li>
+				</ul>
+			</div>
+			<div id="right-container">
+				<div id="bbs-container" style="margin-top: 10px;margin-left: 100px;">
+					<div id="bbs-header">
+						<ul class="nav navbar-nav nav-tabs" id="bbsTabs">
+							<li class="active">
+								<a href="#selling" data-toggle="tab">药材销售</a>
+							</li>
+							<li>
+								<a href="#purchase" data-toggle="tab">药材收购</a>
+							</li>
+							<li>
+								<a href="#communication" data-toggle="tab">经验交流</a>
+							</li>
+							<li>
+								<a href="#myPost" data-toggle="tab">我的帖子</a>
+							</li>
+							<li>
+								<div>
+									<form class="navbar-form navbar-left" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Search" />
+										</div>
+										<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" style="margin-right: 0;"></span></button>
+									</form>
+									<button type="button" class="btn btn-default  navbar-btn" id="edit-button" data-toggle="modal" data-target="#chooseType"><span class="glyphicon glyphicon-pencil" ></span>我要发布</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br />
+
+					<!--
+                    	作者：1758522370@qq.com
+                    	时间：2018-10-07
+                    	描述：以下是显示的论坛的各个部分
+                    -->
+
+					<div class="modal fade" id="chooseType" tabindex="-1" role="dialog" aria-labelledby="bbsTitle" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="bbsTitle">请选择发布所文章类型</h4>
+								</div>
+								<div class="modal-body">
+									<a href="writeSelling.html"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-leaf"></span>药材销售信息</button></a>
+									<a href="writePurchase.html"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-grain"></span>药材收购信息</button></a>
+									<a href="writeCommunication.html"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-bullhorn"></span>经验交流信息</button></a>
+									<button type="button" class="btn btn-default" data-dismiss="modal" style="float: right;">取消</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr align="left" width="70%" color="white" />
+
+					<div id="bbsTabContent" class="tab-content">
+						<div class="tab-pane fade in active" id="selling">
+							<p>
+								药材销售信息
+							</p>
+						</div>
+						<div class="tab-pane fade" id="purchase">
+							<p>
+								药材收购信息
+							</p>
+						</div>
+						<div class="tab-pane fade" id="communication">
+							<p>
+								经验交流
+							</p>
+						</div>
+						<div class="tab-pane fade" id="myPost">
+							<p>
+								我的
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="bottom-container">
+			<!--
+            	作者：1758522370@qq.com
+            	时间：2018-10-06
+            	描述：可为底部固定信息
+            -->
+		</div>
+	</body>
+
+</html>
