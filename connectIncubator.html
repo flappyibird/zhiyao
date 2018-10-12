@@ -26,11 +26,11 @@
             -->
 			<p>智药</p>
 		</div>
-		<div id="body-container" class="container" style="margin-left: 0; padding-left: 0;">
+		<div id="body-container" class="container" >
 			<!--
             	container 类不可嵌套使用
             -->
-			<div id="left-container" style="height: 1000px">
+			<div id="left-container" style="height: 1000px;">
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active word">
 						<a href="incubator.html"><span class="glyphicon glyphicon-th-large"></span>培养箱</a>
@@ -44,10 +44,10 @@
 				</ul>
 			</div>
 			<div id="right-container">
-				<div style="margin-left:140px;margin-top: 40px;" class="row">
+				<div style="margin-left:140px;margin-top: 40px;" class="row" id="right-container-block">
 					<div>
 						<blockquote>
-							<h4 >连接新的培养箱</h4>
+							<h4>连接新的培养箱</h4>
 						</blockquote>
 					</div>
 					<div class="col-md-8">
@@ -117,7 +117,10 @@
 										<button class="btn btn-default col-md-2 text-center" type="button">自动检测</button>
 									</div>
 								</div>
-								<button class="btn btn-link" type="button">暂不添加，跳过此步</button>
+								<a href="incubator.html">
+									<button class="btn btn-link" type="button">暂不添加，跳过此步</button>
+								</a>
+
 								<div style="float: right;">
 									<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addConfiguration">添加自定义环境配置</button>
 									<button class="btn btn-success" type="submit">完成</button>
