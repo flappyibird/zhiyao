@@ -12,3 +12,28 @@
 	height: auto;
 	margin: 10px;
 }
+
+#body-container{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.iSearch{
+	padding-left: 0;
+}
+
+.input-block{
+	margin-bottom: 50px;
+}
+
+.input-box{
+	padding-left: 0;
+}
+
+.cinput-box{
+	padding-top: 7px;
+}
+
+#right-container-block{
+	margin-left:140px;margin-top: 40px;
+}
