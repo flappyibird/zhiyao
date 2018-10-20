@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>index</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/all.css" />
+		<link rel="stylesheet" href="css/incubator.css" />
+		<script src="jquery-3.3.1.js"></script>
+		<!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div id="top-container">
+			<!--
+		            	作者：1758522370@qq.com
+		            	时间：2018-10-06
+		            	描述：标头
+		            -->
+			<h2 style="color: transparent;
+		       background-color : black;
+		       text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+		       -webkit-background-clip : text;">智药  zhiyao.com</h2>
+		</div>
+		<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+		<nav class="navbar navbar-light " role="navigation" style="background-color: #e3f2fd;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"> 智药 </a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">商城</a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								智库 <b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">jmeter</a>
+								</li>
+								<li>
+									<a href="#">EJB</a>
+								</li>
+								<li>
+									<a href="#">Jasper Report</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">分离的链接</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="#">另一个分离的链接</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
+					</li>
+					<li>
+						<a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+					</li>
+				</ul>
+				<form class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default">搜索</button>
+				</form>
+			</div>
+		</nav>
+		<div id="body-container" class="container" style="margin-left: 0; padding-left: 0;">
+			<!--
+            	container 类不可嵌套使用
+            -->
+            <div id="left-container">
+            	<div id="left-navbar">
+            		<ul class="nav nav-pills nav-stacked">
+            			<li class="word active">
+            				<a href="incubator.html"><span class="glyphicon glyphicon-th-large"></span>培养箱</a>
+            			</li>
+            			<li class="word">
+            				<a href="bbs.html"><span class="glyphicon glyphicon-comment"></span>论坛&nbsp;&nbsp;</a>
+            			</li>
+            			<li class="word">
+            				<a href="my.html"><span class="glyphicon glyphicon-user"></span>我的&nbsp;&nbsp;</a>
+            			</li>
+            		</ul>
+            	</div>
+            </div>
+			<div id="right-container">
+				<div class="incubator-container">
+					<!--在这里填入我的内容-->
+
+					<div style="margin-left:140px;margin-top: 40px;" class="row">
+						<img src="img/dashboard02.PNG" />
+						<br/>
+						<br />
+						<ul class="list-group mb-3">
+							<li class="list-group-item d-flex justify-content-between lh-condensed">
+								<div>
+									<h6 class="my-0">当前温度</h6>
+									
+								</div>
+								<span class="text-muted">12</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between lh-condensed">
+								<div>
+									<h6 class="my-0">初始温度</h6>
+									
+								</div>
+								<span class="text-muted">8</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between lh-condensed">
+								<div>
+									<h6 class="my-0">建议温度</h6>
+									<!--<small class="text-muted">Brief description</small>-->
+								</div>
+								<span class="text-muted">5</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between">
+								<div>
+								<h6 class="my-0">自定义</h6>
+								<small class="text-muted">你的修改需要一些时间才能生效</small>
+								</div>
+								<div>
+								<input class="form-control" type="text" id="pMedicine" style="margin-top=align-content: 20px;" />
+								<a href="incubator.html"><button  type="button" class="btn btn-primary btn-lg" >提交</button></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" id="bottom-container">
+			<!--
+            	作者：1758522370@qq.com
+            	时间：2018-10-06
+            	描述：可为底部固定信息
+            -->
+		</div>
+	</body>
+
+</html>
