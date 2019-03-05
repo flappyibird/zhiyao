@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    {% load static %}
+    <title>incubator details</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="{% static 'css/incubator/ie10-viewport-bug-workaround.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="carousel.css" rel="stylesheet">-->
+    <!--智药页面css样式-->
+    <link rel="stylesheet" href="{% static 'css/all.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/incubator.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/incubator/navbar.css' %}"/>
+    <!--		<script src="../jquery-3.3.1.js"></script>-->
+    <!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
+    <!--	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+
+    <noscript>
+        <link rel="stylesheet" href="{% static 'css/incubator/noscript.css' %}"/>
+    </noscript>
+</head>
+<!-- NAVBAR
+================================================== -->
+<script>
+		function submitChangeInfo(){
+			var url="127.0.0.1";
+
+			request = XMLHttpRequest();
+
+
+		}
+
+
+
+</script>
+<body>
+<div id="top-container">
+    <!--
+        作者：1758522370@qq.com
+        时间：2018-10-06
+        描述：标头
+    -->
+    <h2 style="color: transparent;
+       background-color : black;
+       text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+       -webkit-background-clip : text;">智药 zhiyao.com</h2>
+</div>
+<!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
+<nav class="navbar navbar-light " role="navigation" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#"> 智药 </a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">商城</a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        智库 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">jmeter</a>
+                        </li>
+                        <li>
+                            <a href="#">EJB</a>
+                        </li>
+                        <li>
+                            <a href="#">Jasper Report</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">分离的链接</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">另一个分离的链接</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
+            </li>
+            <li>
+                <a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
+            </li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+        </form>
+    </div>
+</nav>
+<div id="left-container">
+    <div id="left-navbar">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="word active">
+                <a href="incubator.html"><span class="glyphicon glyphicon-th-large"></span>培养箱</a>
+            </li>
+            <li class="word">
+                <a href="bbs.html"><span class="glyphicon glyphicon-comment"></span>论坛&nbsp;&nbsp;</a>
+            </li>
+            <li class="word">
+                <a href="my.html"><span class="glyphicon glyphicon-user"></span>我的&nbsp;&nbsp;</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="right-container">
+
+    <nav id="nav" style="width:auto;">
+        <ul>
+            <li><a href="#viewChart" class="active">查看</a></li>
+            <li><a href="#settingProperties">修改</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <div class="container marketing " id="viewChart">
+
+            <!--箱内属性展示  简单表示 -->
+            <div class="row ">
+                <div class="col-lg-4 ">
+                    <img class=" img " src="{% static 'img/slide0.jpg' %}" width="240 " height="240 ">
+                    <h2>远程查看</h2>
+
+                    <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 ">
+                    <img class=" img " src="{% static 'img/dashboard02.PNG' %}" width="240 " height="240 ">
+                    <h2>光照</h2>
+                    <p>当前光照强度：{{led_cur}}</p>
+
+                    <p>初始光照强度：</p>
+                    <output value="10lux "></output>
+                    <p>建议光照强度：</p>
+                    <output value="10lux "></output>
+                    <p>
+                        <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 ">
+                    <img class="img " src="{% static 'img/dashboard02.PNG'%}" width="240 " height="240 ">
+                    <h2>温度</h2>
+                    <p>当前温度：{{tem_cur}}</p>
+                    <output value="10lux "></output>
+                    <p>初始温度：</p>
+                    <output value="10lux "></output>
+                    <p>建议温度：</p>
+                    <output value="10lux "></output>
+                    <p>
+                        <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 ">
+                    <img class="img " src="{% static 'img/dashboard02.PNG' %}" width="240 " height="240 ">
+                    <h2>湿度</h2>
+                    <p>当前湿度：{{hum_cur}}</p>
+                    <output value="10lux "></output>
+                    <p>初始湿度：</p>
+                    <output value="10lux "></output>
+                    <p>建议湿度：</p>
+                    <output value="10lux "></output>
+                    <p>
+                        <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 ">
+                    <img class="img " src="{% static 'img/dashboard02.PNG'%}" width="240 " height="240 ">
+                    <h2>压强</h2>
+                    <p>当前压强：{{pre_cur}}</p>
+                    <output value="10lux "></output>
+                    <p>初始压强：</p>
+                    <output value="10lux "></output>
+                    <p>建议压强：</p>
+                    <output value="10lux "></output>
+                    <p>
+                        <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-lg-4 ">
+                    <img class=" img " src="{% static 'img/dashboard02.PNG' %}" width="240 " height="240 ">
+                    <h2>自定义</h2>
+                    <p>
+                        <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
+                    </p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+
+            <!-- /.row -->
+        </div>
+        <form id="ftem" action="test" method="post">
+                   {% csrf_token %}
+            温度
+            <input type="text" name="tem_ctl"/>
+            湿度
+            <input type="text" name="hum_ctl"/>
+            光照
+            <input type="text" name="led_ctl"/>
+            压强
+            <input type="text" name="pre_ctl"/>
+            <input type="submit" value="提交修改"/>
+        </form>
+        <!--<div id="settingProperties">-->
+            <!--<h2>培养箱属性表单</h2>-->
+
+            <!--<div class="table-responsive ">-->
+                <!--<table class="table table-striped table-sm ">-->
+                    <!--<thead>-->
+                    <!--<tr>-->
+                        <!--<th>属性</th>-->
+                        <!--<th>当前值</th>-->
+                        <!--<th>初始值</th>-->
+                        <!--<th>建议值</th>-->
+                        <!--<th>自定义</th>-->
+                    <!--</tr>-->
+                    <!--</thead>-->
+                    <!--<tbody>-->
+
+                    <!--<tr>-->
+                        <!--<td>光照强度</td>-->
+                        <!--<td>{{led_cur}}</td>-->
+                        <!--<td>0</td>-->
+                        <!--<td>223</td>-->
+                        <!--<td>-->
+                            <!--<input class="form-control " type="text " name="led_ctl" id="led_ctl"-->
+                                   <!--style="margin-top=align-content: 20px; "/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+
+                    <!--<tr>-->
+                        <!--<td>温度</td>-->
+                        <!--<td>{{tem_cur}}</td>-->
+                        <!--<td>0</td>-->
+                        <!--<td>223</td>-->
+                        <!--<td>-->
+                            <!--<input class="form-control " type="text " name="tem_ctl" id="tem_ctl"-->
+                                   <!--style="margin-top=align-content: 20px; "/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>湿度</td>-->
+                        <!--<td>{{hum_cur}}</td>-->
+                        <!--<td>0</td>-->
+                        <!--<td>223</td>-->
+                        <!--<td>-->
+                            <!--<input class="form-control " type="text " name="hum_ctl" id="hum_ctl"-->
+                                   <!--style="margin-top=align-content: 20px; "/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>压强</td>-->
+                        <!--<td>{{pre_cur}}</td>-->
+                        <!--<td>0</td>-->
+                        <!--<td>223</td>-->
+                        <!--<td>-->
+                            <!--<input class="form-control " type="text " name="pre_ctl" id="pre_ctl"-->
+                                   <!--style="margin-top=align-content: 20px; "/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<td>其他</td>-->
+                        <!--<td>222</td>-->
+                        <!--<td>212</td>-->
+                        <!--<td>223</td>-->
+                        <!--<td>-->
+                            <!--<input class="form-control " type="text " id="pMedicine "-->
+                                   <!--style="margin-top=align-content: 20px; "/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+
+                    <!--</tbody>-->
+                <!--</table>-->
+            <!--</div>-->
+            <!--<button type="button " class="btn btn-primary btn-lg " onclick="submitParam2()">提交修改</button>-->
+            <!--<form id="paramform" action="test" method="post" >-->
+                <!--<input id="a" type="text" value=""/>-->
+            <!--</form>-->
+            <!--<h6>-->
+               <!--返回消息；-->
+            <!--</h6>-->
+            <!--<p>-->
+            <!--{{response}}-->
+            <!--</p>-->
+
+        <!--</div>-->
+    </div>
+</div>
+<!--right-container-->
+<footer class="footer">
+
+    <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+    </div>
+</footer>
+
+
+<script>
+			// 当网页向下滑动 20px 出现"返回顶部" 按钮
+			window.onscroll = function() {
+				scrollFunction()
+			};
+
+			function scrollFunction() {
+				console.log(121);
+				if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("returnTop").style.display = "block";
+				} else {
+					document.getElementById("returnTop").style.display = "none";
+				}
+			}
+
+			// 点击按钮，返回顶部
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+
+
+
+</script>
+
+<script>
+            function submitParam2(){
+                var list = {};
+				list["led_ctl"]=document.getElementById("led_ctl").value;
+				list["tem_ctl"]=document.getElementById("tem_ctl").value;
+				list["hum_ctl"]=document.getElementById("hum_ctl").value;
+				list["pre_ctl"]=document.getElementById("pre_ctl").value;
+                var text = JSON.stringify(list);
+                document.getElementById("a").value=text;
+                document.getElementById("paramform").submit();
+            }
+			//构造虚拟表单提交post请求（用户自定义的环境参数）
+			function submitParam1(){
+
+				var form = document.createElement("form");
+				form.action = "test";
+				form.method = "post";
+				form.style.display = "none";
+				var list = {};
+				list["led_ctl"]=document.getElementById("led_ctl").value;
+				list["tem_ctl"]=document.getElementById("tem_ctl").value;
+				list["hum_ctl"]=document.getElementById("hum_ctl").value;
+				list["pre_ctl"]=document.getElementById("pre_ctl").value;
+				for(item in list){
+					var temp = document.createElement("textarea");
+					temp.name=item;
+					temp.value = list[item];
+					form.appendChild(temp);
+				}
+				//添加csrf
+
+				var token = $('meta[name="_csrf"]').attr('content');
+    			form.appendChild(csrfField);
+
+				document.body.appendChild(form);
+				form.submit();
+			}
+
+
+
+</script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+<script>
+			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js "><\/script>')
+
+
+
+</script>
+<script src="{% static 'bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{% static 'js/incubator/ie10-viewport-bug-workaround.js' %}"></script>
+
+
+<script src="{% static 'js/incubator/jquery.min.js' %}"></script>
+<script src="{% static 'js/incubator/jquery.scrollex.min.js' %}"></script>
+<script src="{% static 'js/incubator/jquery.scrolly.min.js' %}"></script>
+<!--	<script src="assets/js/browser.min.js"></script>-->
+<script src="{% static 'js/incubator/breakpoints.min.js' %}"></script>
+<script src="{% static 'js/incubator/util.js' %}"></script>
+<script src="{% static 'js/incubator/main.js' %}"></script>
+</body>
+
+</html>

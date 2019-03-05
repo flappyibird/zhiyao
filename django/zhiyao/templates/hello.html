@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>openled</title>
+</head>
+<body>
+    <div align="center">
+
+    <form action="/openled" method="post">
+        {% csrf_token %}
+        温度
+        <input type="text" name="tem_ctl">
+        小灯
+        <input type="text" name="led_ctl">
+        <input type="submit" value="提交">
+    </form>
+    <p>
+        {{response}}
+    </p>
+        <p>
+            当前培养箱参数：
+        </p>
+        <p>
+            温度：            {{tem_cur}}
+        </p>
+        <p>
+            湿度：{{hum_cur}}
+        </p>
+        <p>
+            小灯：            {{led_cur}}
+        </p>
+        <p>
+            压强：            {{pre_cur}}
+        </p>
+
+    </div>
+</body>
+</html>
