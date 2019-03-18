@@ -7,6 +7,19 @@
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
+class ChangeLog(models.Model):
+    tem=models.CharField(max_length=5)#温度
+    pre=models.CharField(max_length=6)#压强
+    hum=models.CharField(max_length=5)#湿度
+    led=models.CharField(max_length=5)#光照
+    lasttime=models.DateTimeField(auto_now=True)#最后一次更新时间
+
+class ViewParam(models.Model):
+    tem=models.CharField(max_length=5)#温度
+    pre=models.CharField(max_length=6)#压强
+    hum=models.CharField(max_length=5)#湿度
+    led=models.CharField(max_length=5)#光照
+    lasttime=models.DateTimeField(auto_now=True)#最近一次更新时间
 
 class Alterenvironment(models.Model):
     #修改环境信息

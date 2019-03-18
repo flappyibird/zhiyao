@@ -37,4 +37,9 @@ urlpatterns = [
     path('getbbs/sellingDetail/<id>',views.getSDetail,name='sDetail'),
     path('getbbs/communicationDetail/<id>',views.getCDetail,name='cDetail'),
     path('my/',views.my),
+    #############################路径需要修改
+    path('guide', views.guide),
+    path('', views.proIncubator),  # 处理来自网页的箱子控制信息,返回箱子参数信息web
+    path('hard', views.proHard),  # 接收本地sock服务器转发的硬件相关数据
+    path('image', views.returnImage),  # 由页面自动发起请求，获取箱内图片
 ]
