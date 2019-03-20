@@ -27,9 +27,8 @@ def login(request):
                         incuName.append(item.incuname)
                         incuID.append(item.incuno)
                         incu=zip(incuName,incuID)
+                    print('login success')
                     return render(request,'incubator.html',{"incu":incu})
-                    #return render(request,"incubator.html",{"a":1})
-                    #return redirect('/incubator/')
                 else:
                     message='密码错误'
                     return render(request,'login.html',{'message':message})
@@ -79,8 +78,19 @@ def getIncubator(userid):
     #获取用户所有正在使用的培养箱
 
 def incubator(request):
-    pass
-    return render(request,'incubator.html')
+    userphone = request.session['userphone']
+    # get是获取单个对象，filte是设置筛选条件
+    incubators = models.Incubator.objects.filter(user_userid=userphone)
+    incuName = []
+    incuID = []
+    incu = []
+    for item in incubators:
+        incuName.append(item.incuname)
+        incuID.append(item.incuno)
+        incu = zip(incuName, incuID)
+    print('jump to incubator success')
+    return render(request, 'incubator.html', {"incu": incu})
+    #return render(request,'incubator.html')
 
 #查看培养箱的详细信息
 def incubatorDeatil(request,incubatorno):
@@ -197,7 +207,19 @@ def bbs(request):
     return render(request,'bbs.html')
 
 def my(request):
-    return render(request,'my.html')
+    userphone = request.session['userphone']
+    # get是获取单个对象，filte是设置筛选条件
+    incubators = models.Incubator.objects.filter(user_userid=userphone)
+    incuName = []
+    incuID = []
+    incu = []
+    for item in incubators:
+        incuName.append(item.incuname)
+        incuID.append(item.incuno)
+        incu = zip(incuName, incuID)
+    print('jump to incubator success')
+    return render(request, 'my.html', {"incu": incu})
+    #return render(request,'my.html')
 
 def writePurchase(request):
     return render(request,'writePurchase.html')
