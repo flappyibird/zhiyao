@@ -3,6 +3,7 @@ from django.shortcuts import redirect
 from django.http import HttpResponse
 from app import models
 import time
+import json
 # Create your views here.
 
 #实现用户登陆功能
@@ -90,7 +91,6 @@ def incubator(request):
         incu = zip(incuName, incuID)
     print('jump to incubator success')
     return render(request, 'incubator.html', {"incu": incu})
-    #return render(request,'incubator.html')
 
 #查看培养箱的详细信息
 def incubatorDeatil(request,incubatorno):
@@ -105,7 +105,7 @@ def incubatorDeatil(request,incubatorno):
     monitorInfo=getCurrent(ino)
     iuno=getIncubatorusingID(ino)
 
-    #将当前用户访问的培养箱的信息存放再session重
+    #将当前用户访问的培养箱的信息存放再session中
     request.session['incubatorid']=iuno
     #session中的inid用于之后的页面重定向
     request.session['inid']=ino
@@ -116,7 +116,38 @@ def incubatorDeatil(request,incubatorno):
     info.update(monitorInfo)
     # info=combineDict(initalInfo,monitorInfo)
     print(info)
+
+    #处理监控信息
+    incubatorsUsing = models.Incubatorusing.objects.filter(incubator_incuno=incubatorno).order_by('initializetime')
+    iuno = incubatorsUsing[len(incubatorsUsing) - 1].iuno  # 获取这个培养箱的使用编号的最新的那个编号
+    print(iuno)
+    monitorDatas = models.Monitorinform.objects.filter(incubatorusing_iuno=iuno).order_by('mtime')
+    time=[]
+    temperature=[]
+    humidity=[]
+    pressure=[]
+    lightIntensity=[]
+    for data in monitorDatas:
+        time.append(str(data.mtime)[:16])
+        temperature.append(data.mtemperature)
+        humidity.append(data.mhumidity)
+        pressure.append(data.mpressure)
+        lightIntensity.append(data.mlightlntensity)
+
+    monitorDatas2 = {"Mtimes":json.dumps(time[:10]),"Mtemperatures":temperature[:10],"Mhumiditys":humidity[:10],"Mpressures":pressure[:10],"MlightIntensitys":lightIntensity[:10]}
+    print(time)
+    info.update(monitorDatas2)
     return render(request,"incubatorDetail.html",info)
+
+
+#获取监控信息返回给调用函数
+def getMointorData(incubatorno):
+    incubatorsUsing=models.Incubatorusing.objects.filter(incubator_incuno=incubatorno).order_by('initializetime')
+    iuno=incubatorsUsing[len(incubatorsUsing)-1].iuno    #获取这个培养箱的使用编号的最新的那个编号
+    print(iuno)
+    monitorDatas = models.Monitorinform.objects.filter(incubatorusing_iuno=iuno)
+
+
 
 #辅助的功能函数 将两个字典合并
 def combineDict(dic1,dic2):
@@ -396,3 +427,9 @@ def proIncubator(request):
 #用户初次使用系统流程
 def guide(request):
     return render(request,'connectingGuide.html')
+
+
+
+#用作测试
+def test(request):
+    return render(request,'test.html')

@@ -18,23 +18,71 @@
     <link href="/static/css/incubator/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <!--<link href="carousel.css" rel="stylesheet">-->
-    <!--智药页面css样式-->
     <link rel="stylesheet" href="/static/css/all.css"/>
     <link rel="stylesheet" href="/static/css/incubator.css"/>
     <link rel="stylesheet" href="/static/css/incubator/navbar.css"/>
-    <!--		<script src="../jquery-3.3.1.js"></script>-->
-    <!--<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>-->
-    <!--	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
-
+    <script type="text/javascript" src="http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="http://cdn.hcharts.cn/highcharts/exporting.js"></script>
     <noscript>
         <link rel="stylesheet" href="/static/css/incubator/noscript.css"/>
     </noscript>
+
 </head>
 <!-- NAVBAR
 ================================================== -->
 
 <body>
+
+<script type="text/javascript">
+    $(function() {
+        var xaixs={{ Mtimes|safe }};
+        console.log("测试time");
+        {#console.log({{ Mtimes }});#}
+        $('#container').highcharts({
+
+    title: {
+        text: '温度'
+    },
+            xAxis:{
+        categories: xaixs
+            },
+    yAxis: {
+        title: {
+            text: 'temperature'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    series: [{
+        name: 'Temp',
+        data: {{ Mtemperatures }}
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+    });
+
+</script>
+
 <div id="top-container">
     <!--
         作者：1758522370@qq.com
@@ -45,6 +93,7 @@
        background-color : black;
        text-shadow : rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
        -webkit-background-clip : text;">智药 zhiyao.com</h2>
+
 </div>
 <!--<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">-->
 <nav class="navbar navbar-light " role="navigation" style="background-color: #e3f2fd;">
@@ -144,6 +193,10 @@
 
                         <a class="btn btn-default " href="viewDetail0.html " role="button ">View details &raquo;</a>
                         </p>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <h2>test</h2>
+                        <div id="container"></div>
                     </div>
                     <div class="col-lg-4 ">
                         <img class=" img " src="/static/img/dashboard02.PNG " width="240 " height="240 ">
@@ -279,9 +332,9 @@
                         </table>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg">提交修改</button>
-{#                    <button type="button " class="btn btn-primary btn-lg "#}
-{#                            onclick="javascrtpt:window.location.href='incubator.html' ">提交修改#}
-{#                    </button>#}
+                    <button type="button " class="btn btn-primary btn-lg "
+                            onclick="javascrtpt:window.location.href='incubator.html' ">提交修改
+                    </button>
                 </form>
 
             </div>
@@ -299,7 +352,6 @@
 
 <!--right-container-->
 <footer class="footer">
-
     <div class="container">
         <p class="text-muted">Place sticky footer content here.</p>
     </div>
@@ -328,25 +380,6 @@
     }
 </script>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
-<script>
-    window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js "><\/script>')
-</script>
-<script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="/static/js/incubator/ie10-viewport-bug-workaround.js"></script>
-
-
-<script src="/static/js/incubator/jquery.min.js"></script>
-<script src="/static/js/incubator/jquery.scrollex.min.js"></script>
-<script src="/static/js/incubator/jquery.scrolly.min.js"></script>
-<!--	<script src="assets/js/browser.min.js"></script>-->
-<script src="/static/js/incubator/breakpoints.min.js"></script>
-<script src="/static/js/incubator/util.js"></script>
-<script src="/static/js/incubator/main.js"></script>
 </body>
 
 </html>
