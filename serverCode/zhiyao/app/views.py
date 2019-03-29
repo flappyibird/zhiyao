@@ -391,10 +391,10 @@ def proHard(request):
 def returnImage(request):
     dir='realtime_images'
     lists = os.listdir(dir)  # 列出目录的下所有文件和文件夹保存到lists
-    print(lists)
+    #print(lists)
     lists.sort(key=lambda fn: os.path.getmtime(dir + "\\" + fn))  # 按时间排序
     file_new = os.path.join(dir, lists[-1])  # 获取最新的文件保存到file_new
-    print(file_new)
+    #print(file_new)
     f=open(file_new,'rb')
     data=f.read()
     f.close()
@@ -422,7 +422,7 @@ def proIncubator(request):
         print("文世光呀:",clg.tem,clg.hum,clg.led,clg.pre)
         clg.save()
         res['response'] = "修改已经收到：" + clg.tem
-    return render(request, 'incubatorDetail2.html', res)
+    return render(request, 'incubatorDetail.html', res)
 
 #用户初次使用系统流程
 def guide(request):

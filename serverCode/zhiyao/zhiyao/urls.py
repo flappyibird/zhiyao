@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,re_path
 from app import views
 
 urlpatterns = [
@@ -42,5 +42,5 @@ urlpatterns = [
     path('guide', views.guide),
     path('', views.proIncubator),  # 处理来自网页的箱子控制信息,返回箱子参数信息web
     path('hard', views.proHard),  # 接收本地sock服务器转发的硬件相关数据
-    path('image', views.returnImage),  # 由页面自动发起请求，获取箱内图片
+    re_path(r'image.*', views.returnImage),  # 由页面自动发起请求，获取箱内图片
 ]
