@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 import time
 import json
+from classifier import predict
 # Create your views here.
 
 #实现用户登陆功能
@@ -99,6 +100,20 @@ def incubator(request):
     print('jump to incubator success')
     return render(request, 'incubator.html', {"incu": incu})
 
+def getAdvice(category):
+    #categories=['bad','good','green','normal','red']
+    humidity={'bad':46.42 ,'good':46.42 ,'green':46.42 ,'normal':46.42 ,'red':46.42 }
+    temperature={'bad':25.46,'good':25.46,'green':25.46,'normal':25.46,'red':25.46}
+    pressure={'bad':104375,'good':104375,'green':104375,'normal':104375,'red':104375}
+    light={'bad':55231,'good':55231,'green':55231,'normal':55231,'red':55231}
+    state={'bad':'糟糕','good':'很好','green':'幼苗','normal':'正常状态','red':'营养过剩'}
+    if category=='error':
+        print('读取图片存在错误，无法判断类别')
+        return None
+    else:
+        return {"state":state,"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
+
+
 #查看培养箱的详细信息
 def incubatorDeatil(request,incubatorno):
     #这个incubatorno传递进来的是培养箱的编号
@@ -149,6 +164,18 @@ def incubatorDeatil(request,incubatorno):
                      "Mpressures": pressure[:10], "MlightIntensitys": lightIntensity[:10]}
     print(time)
     info.update(monitorDatas2)
+
+    dir = 'realtime_images'
+    lists = os.listdir(dir)  # 列出目录的下所有文件和文件夹保存到lists
+    print(lists)
+    lists.sort(key=lambda fn: os.path.getmtime(dir + "/" + fn))  # 按时间排序
+    file_new = os.path.join(dir, lists[-1])  # 获取最新的文件保存到file_new
+    print(file_new)
+
+    category = predict(file_new)
+    adviceData = getAdvice(category)
+    # adviceData的内容为：{"state":state,"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
+    info.update(adviceData)
     return render(request, "incubatorDetail3.html", info)
 
 

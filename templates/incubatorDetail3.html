@@ -354,17 +354,19 @@
                 </div>
                 <div class="col-lg-3">
                     <H2>植物名称：多肉</H2>
-                    <h3>植物状态：幼株</h3>
+                    <h3>植物状态：{{ state }}</h3>
                     <h3>植物习性：</h3>
                     <p>
                         多肉植物喜通风，需要充足的光照，为避免黑腐，宜控水不宜过度浇水。
                     </p>
                     <h3>建议培养环境：</h3>
+                    # adviceData的内容为：{"state":state,"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
                     <P>
-                        光照：55231lux;
-                        温度：25.46℃;
-                        湿度：46.42%;
-                        压强：104375Pa;
+                        光照：{{ adviceLight }} lux;
+                        温度：{{ adviceTemperature }} ℃;
+                        湿度：{{ adviceHumidity }} %;
+                        压强：{{ advicepressure }}Pa;
+
                     </P>
                 </div>
             </div>
@@ -373,28 +375,26 @@
                     <div id="container"></div>
                     <p>当前温度：{{ Mtemperatures.1 }}</p>
                     <p>初始温度：{{ Itemperature }}</p>
-                    <p>建议温度：</p>
+                    <p>建议温度：{{ adviceTemperature }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container2"></div>
                     <p>当前湿度：{{ Mhumiditys.1 }}</p>
                     <p>初始湿度：{{ Ihumidity }}</p>
-                    <p>建议湿度：</p>
+                    <p>建议湿度：{{ adviceHumidity }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container3"></div>
                     <p>当前光照：{{ MlightIntensitys.1 }}</p>
                     <p>初始光照：{{ IlightIntensity }}</p>
-                    <p>建议光照：</p>
+                    <p>建议光照：{{ adviceLight }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container4"></div>
                     <p>当前压强：{{ Mpressures.1 }}</p>
                     <p>初始压强：{{ Ipressure }}</p>
-                    <p>建议压强：</p>
+                    <p>建议压强：{{ advicepressure }}</p>
                 </div>
-
-
 
                 <!-- /.col-lg-3 -->
             </div>
@@ -423,7 +423,7 @@
                             <td>光照强度(lux)</td>
                             <td>{{ MlightIntensity }}</td>
                             <td>{{ IlightIntensity }}</td>
-                            <td>55131</td>
+                            <td>{{ adviceLight }}</td>
                             <td>
                                 <input name="led_ctl" class="form-control " id="pMedicine "
                                        style="margin-top=align-content: 20px; " type="text ">
@@ -434,7 +434,7 @@
                             <td>温度（℃）</td>
                             <td>{{ Mtemperature }}</td>
                             <td>{{ Itemperature }}</td>
-                            <td>25.46</td>
+                            <td>{{ adviceTemperature }}</td>
                             <td>
                                 <input name="tem_ctl" class="form-control " id="pMedicine "
                                        style="margin-top=align-content: 20px; " type="text ">
@@ -444,7 +444,7 @@
                             <td>湿度（%）</td>
                             <td>{{ Mhumidity }}</td>
                             <td>{{ Ihumidity }}</td>
-                            <td>46.41</td>
+                            <td>{{ adviceHumidity }}</td>
                             <td>
                                 <input name="hum_ctl" class="form-control " id="pMedicine "
                                        style="margin-top=align-content: 20px; " type="text ">
@@ -454,7 +454,7 @@
                             <td>压强（Pa）</td>
                             <td>{{ Mpressure }}</td>
                             <td>{{ Ipressure }}</td>
-                            <td>104375</td>
+                            <td>{{ advicepressure }}</td>
                             <td>
                                 <input name="pre_ctl" class="form-control " id="pMedicine "
                                        style="margin-top=align-content: 20px; " type="text ">
