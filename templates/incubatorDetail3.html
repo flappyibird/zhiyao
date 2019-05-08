@@ -284,12 +284,6 @@
             {% if request.session.is_login %}
             <p>欢迎你，{{ request.session.userphone }}</p>
             {% endif %}
-            <li>
-                <a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a>
-            </li>
-            <li>
-                <a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a>
-            </li>
         </ul>
         <form class="navbar-form navbar-right" role="search">
             <div class="form-group">
@@ -322,7 +316,7 @@
     </div>
 </div>
 {% if IisSucceed and MisSucceed %}
-<div id="right-container">
+<div id="right-container" style="float:right;width:90%">
     <nav id="nav" style="width:auto;">
         <ul>
             <li><a class="active" href="#viewChart">查看</a></li>
@@ -360,14 +354,10 @@
                         多肉植物喜通风，需要充足的光照，为避免黑腐，宜控水不宜过度浇水。
                     </p>
                     <h3>建议培养环境：</h3>
-                    # adviceData的内容为：{"state":state,"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
-                    <P>
-                        光照：{{ adviceLight }} lux;
-                        温度：{{ adviceTemperature }} ℃;
-                        湿度：{{ adviceHumidity }} %;
-                        压强：{{ advicepressure }}Pa;
-
-                    </P>
+                    <p>光照：{{ adviceLight }} lux;</p>
+                    <p>温度：{{ adviceTemperature }} ℃;</p>
+                    <p>湿度：{{ adviceHumidity }} %;</p>
+                    <p>压强：{{ advicepressure }}Pa;</p>
                 </div>
             </div>
             <div class="row ">
@@ -481,12 +471,6 @@
 </div>
 {% endif %}
 
-<!--right-container-->
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-    </div>
-</footer>
 
 
 <script>

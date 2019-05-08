@@ -11,148 +11,13 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1177015535">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="8" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="2747" />
-          <entry key="js" value="550" />
-          <entry key="py" value="7260" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="2747" />
-          <entry key="JavaScript" value="550" />
-          <entry key="Python" value="7260" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="38" />
-          <entry key="js" value="3" />
-          <entry key="py" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="38" />
-          <entry key="JavaScript" value="3" />
-          <entry key="Python" value="20" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.js.language.service.starts" />
-    </session>
-    <session id="-292593374">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="76" />
-          <entry key="py" value="66" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="76" />
-          <entry key="Python" value="66" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="6" />
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="6" />
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="2022763610">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="1" />
-          <entry key="py" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="1" />
-          <entry key="Python" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="19" />
-          <entry key="py" value="157" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="19" />
-          <entry key="Python" value="157" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhiyao/settings.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhiyao/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-421" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zhiyao/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-714" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+            <state relative-caret-position="197">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -160,20 +25,67 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/incubatorDetail3.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/admin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/incubator.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1122">
-              <caret line="368" selection-start-line="368" selection-end-line="368" />
+            <state relative-caret-position="1049">
+              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/realtime_images/tcpImageServer.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/realtime_images/test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <folding>
+                <element signature="e#59#94#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/incubatorDetail3.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
+              <folding>
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/incubator.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="208" column="14" selection-start-line="208" selection-start-column="14" selection-end-line="208" selection-end-column="14" />
+            <state relative-caret-position="1470">
+              <caret line="215" selection-start-line="215" selection-end-line="215" />
               <folding>
                 <element signature="e#34#112#0" expanded="true" />
               </folding>
@@ -197,9 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>light</find>
-      <find>stage</find>
-      <find>moni</find>
       <find>pro</find>
       <find>change</find>
       <find>addtime</find>
@@ -224,9 +133,12 @@
       <find>print</find>
       <find>datetime</find>
       <find />
-      <find />
       <find>form</find>
       <find>file</find>
+      <find>植物习性</find>
+      <find>读取图片存在错误，无法判断类别</find>
+      <find>注册</find>
+      <find>建议</find>
     </findStrings>
     <replaceStrings>
       <replace>col-lg-3</replace>
@@ -257,7 +169,6 @@
         <option value="$PROJECT_DIR$/app/admin.py" />
         <option value="$PROJECT_DIR$/templates/bbs.html" />
         <option value="$PROJECT_DIR$/templates/my.html" />
-        <option value="$PROJECT_DIR$/templates/incubator.html" />
         <option value="G:/main.py" />
         <option value="$PROJECT_DIR$/templates/incubatorDetail.html" />
         <option value="$PROJECT_DIR$/zhiyao/settings.py" />
@@ -265,7 +176,9 @@
         <option value="$PROJECT_DIR$/zhiyao/urls.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/realtime_images/tcpImageServer.py" />
+        <option value="$PROJECT_DIR$/templates/incubator.html" />
         <option value="$PROJECT_DIR$/templates/incubatorDetail3.html" />
+        <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/views.py" />
       </list>
     </option>
@@ -277,10 +190,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="465" />
-    <option name="y" value="-15" />
-    <option name="width" value="1385" />
-    <option name="height" value="745" />
+    <option name="x" value="65" />
+    <option name="y" value="6" />
+    <option name="width" value="647" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -288,7 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -304,17 +216,23 @@
             <path>
               <item name="zhiyao" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhiyao" type="462c0819:PsiDirectoryNode" />
+              <item name="realtime_images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zhiyao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhiyao" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zhiyao" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhiyao" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zhiyao" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhiyao" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zhiyao" type="b2602c69:ProjectViewProjectNode" />
@@ -325,6 +243,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,13 +255,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\zhiyao\static\js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="E:\zhiyao\app" />
       <recent name="D:\Myfiles\智药\github\zhiyao\serverCode\zhiyao\static" />
       <recent name="D:\Myfiles\智药\github\zhiyao\serverCode\zhiyao\templates" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\zhiyao\static\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -427,7 +347,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django server.zhiyao" />
       <item itemvalue="Python.tcpImageServer" />
     </list>
     <recent_temporary>
@@ -459,10 +378,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14977308" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2112676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -475,9 +394,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86913764" visible="true" weight="0.13114753" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32905984" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.13086233" side_tool="true" visible="true" weight="0.13114753" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.86541474" visible="true" weight="0.2534776" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49921754" weight="0.32766616" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.13458529" side_tool="true" weight="0.39103556" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -487,9 +406,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -515,13 +431,11 @@
     <entry file="file://$PROJECT_DIR$/templates/bbs.html" />
     <entry file="file://E:/../../../硬件/PythonHttpServerBasedOnSocket/可传图像加参数/Mycore3.py" />
     <entry file="file://E:/../../../硬件/PythonHttpServerBasedOnSocket/可传图像加参数/Mymodules3.py" />
-    <entry file="file://$PROJECT_DIR$/app/admin.py" />
     <entry file="file://$PROJECT_DIR$/templates/my.html" />
     <entry file="file://E:/../django/zhiyao/realtime_images/tcpImageServer.py" />
     <entry file="file://G:/main.py" />
     <entry file="file://D:/Django-Training/nougat/nougat/settings.py" />
     <entry file="file://$PROJECT_DIR$/templates/connectIncubator.html" />
-    <entry file="file://$PROJECT_DIR$/templates/incubator.html" />
     <entry file="file://$PROJECT_DIR$/templates/communicationDetail.html" />
     <entry file="file://$PROJECT_DIR$/templates/purchaseDetail.html" />
     <entry file="file://$PROJECT_DIR$/templates/index.html" />
@@ -529,17 +443,23 @@
     <entry file="file://$PROJECT_DIR$/templates/writeCommunication.html" />
     <entry file="file://$PROJECT_DIR$/templates/Ready-floo.html" />
     <entry file="file://$PROJECT_DIR$/templates/Ready-destory.html" />
-    <entry file="file://$PROJECT_DIR$/realtime_images/tcpImageServer.py" />
     <entry file="file://$PROJECT_DIR$/app/tests.py" />
     <entry file="file://$PROJECT_DIR$/zhiyao/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/zhiyao/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/zhiyao/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/realtime_images/tcpImageServer.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/realtime_images/test.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/apps.py">
@@ -547,33 +467,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="208" column="14" selection-start-line="208" selection-start-column="14" selection-end-line="208" selection-end-column="14" />
+        <state relative-caret-position="1470">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
           <folding>
             <element signature="e#34#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/static/css/incubator.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/incubatorDetail3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="228" lean-forward="true" selection-start-line="228" selection-end-line="228" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/incubatorDetail3.html">
+    <entry file="file://$PROJECT_DIR$/templates/incubator.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1122">
-          <caret line="368" selection-start-line="368" selection-end-line="368" />
+        <state relative-caret-position="1049">
+          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#59#94#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

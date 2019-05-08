@@ -11,10 +11,52 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MultipleLocator
 import time
 import json
-from classifier import predict
 # Create your views here.
 
-#实现用户登陆功能
+from . import predict
+
+# 注释掉的内容为解决错误的另一种方法
+# from keras.models import load_model
+# import os
+# import numpy as np
+# from keras.preprocessing import image
+# from keras.applications.imagenet_utils import preprocess_input
+# import keras
+#
+# model=None
+#
+# def read_image(img_name):
+#     print('imagename:'+img_name)
+#     img = image.load_img(img_name, target_size=(224, 224))
+#     x = image.img_to_array(img)
+#     x = np.expand_dims(x, axis=0)
+#     x = preprocess_input(x)
+#     return x
+#
+#
+#
+# def predict(imagepath):
+#     categories=['bad','good','green','normal','red']
+#     model=None
+#     if os.path.exists('app//inception_1.h5'):
+#         print('predict if')
+#         keras.backend.clear_session()
+#         model = load_model('app//inception_1.h5')
+#         print('load successful')
+#
+#
+#     if model != None:
+#         img=read_image(imagepath)
+#         print('readimage successful')
+#         prediction=model.predict(img)
+#         result=categories[int(prediction[0][0])]
+#         print(result)
+#         return result
+#     else:
+#         print('predict else')
+#         return "error"
+
+# #实现用户登陆功能
 def login(request):
     if request.method=='POST':
         userphone=request.POST.get('username')
@@ -109,9 +151,10 @@ def getAdvice(category):
     state={'bad':'糟糕','good':'很好','green':'幼苗','normal':'正常状态','red':'营养过剩'}
     if category=='error':
         print('读取图片存在错误，无法判断类别')
-        return None
+        return {"state": '暂无建议', "adviceHumidity": '暂无建议', "adviceTemperature": '暂无建议',
+                "advicepressure":'暂无建议', "adviceLight": '暂无建议'}
     else:
-        return {"state":state,"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
+        return {"state":state[category],"adviceHumidity":humidity[category],"adviceTemperature":temperature[category],"advicepressure":pressure[category],"adviceLight":light[category]}
 
 
 #查看培养箱的详细信息
@@ -168,7 +211,7 @@ def incubatorDeatil(request,incubatorno):
     dir = 'realtime_images'
     lists = os.listdir(dir)  # 列出目录的下所有文件和文件夹保存到lists
     print(lists)
-    lists.sort(key=lambda fn: os.path.getmtime(dir + "/" + fn))  # 按时间排序
+    lists.sort(key=lambda fn: os.path.getmtime(dir + "/" + fn),reverse=True)  # 按时间排序
     file_new = os.path.join(dir, lists[-1])  # 获取最新的文件保存到file_new
     print(file_new)
 
