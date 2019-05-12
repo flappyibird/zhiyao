@@ -427,6 +427,8 @@ import os
 #3.网页上来自用户的修改记录被存库，并返回箱子的实时数据
 
 #1.
+from django.views.decorators.csrf import csrf_exempt
+@csrf_exempt
 def proHard(request):
     request.encode="utf-8"
     response=''

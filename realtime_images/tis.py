@@ -76,6 +76,6 @@ while True:
     #print("Server Starting")
     conn, addr = s.accept()
     print("connected by ", addr)
-    _thread.start_new_thread(prohard,(conn,addr))
+    prohard,(conn,addr)
 #conn.close()
 s.close()
