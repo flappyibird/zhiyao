@@ -140,8 +140,8 @@ class Incubatorusing(models.Model):
 
 
 class Monitorinform(models.Model):
-    monitorid = models.CharField(db_column='Monitorid', primary_key=True, max_length=45)  # Field name made lowercase.
-    mtime = models.DateTimeField(db_column='MTime')  # Field name made lowercase.
+    #monitorid = models.CharField(db_column='Monitorid', primary_key=True, max_length=45)  # Field name made lowercase.
+    mtime = models.DateTimeField(db_column='MTime',default=datetime.now,)  # Field name made lowercase.
     incubatorusing_iuno = models.ForeignKey(Incubatorusing, models.DO_NOTHING, db_column='IncubatorUsing_IUNo', blank=True, null=True)  # Field name made lowercase.
     mtemperature = models.FloatField(db_column='MTemperature')  # Field name made lowercase.
     mhumidity = models.FloatField(db_column='MHumidity')  # Field name made lowercase.

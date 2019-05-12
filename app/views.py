@@ -190,8 +190,8 @@ def incubatorDeatil(request,incubatorno):
     print(iuno)
     # monitorDatas = models.Monitorinform.objects.filter(incubatorusing_iuno=iuno).order_by('mtime')
     monitorDatas = models.Monitorinform.objects.all().order_by('-mtime')
-    print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
-    print(monitorDatas)
+    #print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+    #print(monitorDatas)
     time = []
     temperature = []
     humidity = []
@@ -441,7 +441,7 @@ def proHard(request):
     tem_ctl_need=5-len(tem_ctl)
     hum_ctl_need=5-len(hum_ctl)
     led_ctl_need=5-len(led_ctl)
-    pre_ctl_need=5-len(pre_ctl)
+    pre_ctl_need=6-len(pre_ctl)
     a="0"
     for i in range(tem_ctl_need):
         tem_ctl=a+tem_ctl
@@ -464,6 +464,14 @@ def proHard(request):
         param_p=param_split[2].split('=')[1]
         param_h=param_split[3].split('=')[1]
 
+        mif=Monitorinform()
+        mif.mpressure=param_p
+        mif.mtemperature=param_t
+        mif.mlightlntensity=param_l
+        mif.mhumidity=param_h
+        mif.mplantstage=1
+        mif.save()
+        
         vpm=ViewParam()
         vpm.tem=param_t
         vpm.led=param_l
@@ -476,10 +484,10 @@ def proHard(request):
 def returnImage(request):
     dir='realtime_images'
     lists = os.listdir(dir)  # 列出目录的下所有文件和文件夹保存到lists
-    print(lists)
+    #print(lists)
     lists.sort(key=lambda fn: os.path.getmtime(dir + "/" + fn))  # 按时间排序
     file_new = os.path.join(dir, lists[-1])  # 获取最新的文件保存到file_new
-    print(file_new)
+    #print(file_new)
     f=open(file_new,'rb')
     data=f.read()
     f.close()
@@ -491,8 +499,6 @@ def proIncubator2(request):
     Obj = ViewParam.objects.all().order_by('-addtime')
     if Obj:
         Obj = Obj[0]
-        res['temperature'] = Obj.tem
-        res['humidity'] = Obj.hum
         res['pressure'] = Obj.pre
         res['light'] = Obj.led
     else:

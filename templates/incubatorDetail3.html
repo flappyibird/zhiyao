@@ -188,7 +188,7 @@
         $('#container4').highcharts({
 
     title: {
-        text: '光照'
+        text: '压强'
     },
             xAxis:{
         categories: xaixs
@@ -363,25 +363,25 @@
             <div class="row ">
                 <div class="col-lg-3 ">
                     <div id="container"></div>
-                    <p>当前温度：{{ Mtemperatures.1 }}</p>
+                    <p>当前温度：{{ Mtemperatures.0 }}</p>
                     <p>初始温度：{{ Itemperature }}</p>
                     <p>建议温度：{{ adviceTemperature }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container2"></div>
-                    <p>当前湿度：{{ Mhumiditys.1 }}</p>
+                    <p>当前湿度：{{ Mhumiditys.0 }}</p>
                     <p>初始湿度：{{ Ihumidity }}</p>
                     <p>建议湿度：{{ adviceHumidity }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container3"></div>
-                    <p>当前光照：{{ MlightIntensitys.1 }}</p>
+                    <p>当前光照：{{ MlightIntensitys.0 }}</p>
                     <p>初始光照：{{ IlightIntensity }}</p>
                     <p>建议光照：{{ adviceLight }}</p>
                 </div>
                 <div class="col-lg-3 ">
                     <div id="container4"></div>
-                    <p>当前压强：{{ Mpressures.1 }}</p>
+                    <p>当前压强：{{ Mpressures.0 }}</p>
                     <p>初始压强：{{ Ipressure }}</p>
                     <p>建议压强：{{ advicepressure }}</p>
                 </div>
@@ -411,7 +411,7 @@
 
                         <tr>
                             <td>光照强度(lux)</td>
-                            <td>{{ MlightIntensity }}</td>
+                            <td>{{ MlightIntensitys.0 }}</td>
                             <td>{{ IlightIntensity }}</td>
                             <td>{{ adviceLight }}</td>
                             <td>
@@ -422,7 +422,7 @@
 
                         <tr>
                             <td>温度（℃）</td>
-                            <td>{{ Mtemperature }}</td>
+                            <td>{{ Mtemperatures.0 }}</td>
                             <td>{{ Itemperature }}</td>
                             <td>{{ adviceTemperature }}</td>
                             <td>
@@ -432,7 +432,7 @@
                         </tr>
                         <tr>
                             <td>湿度（%）</td>
-                            <td>{{ Mhumidity }}</td>
+                            <td>{{ Mhumiditys.0 }}</td>
                             <td>{{ Ihumidity }}</td>
                             <td>{{ adviceHumidity }}</td>
                             <td>
@@ -442,7 +442,7 @@
                         </tr>
                         <tr>
                             <td>压强（Pa）</td>
-                            <td>{{ Mpressure }}</td>
+                            <td>{{ Mpressures.0 }}</td>
                             <td>{{ Ipressure }}</td>
                             <td>{{ advicepressure }}</td>
                             <td>
